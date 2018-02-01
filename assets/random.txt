@@ -1,0 +1,20 @@
+color Teal UIColor(red:0.25, green:0.73, blue:0.75, alpha:1) or #3fb9be
+color black #363636 or UIColor(red:0.21, green:0.21, blue:0.21, alpha:1)
+color white UIColor(white)
+
+fonts <link href="https://fonts.googleapis.com/css?family=Lato|Sanchez" rel="stylesheet">
+
+font-family: 'Lato', sans-serif;
+font-family: 'Sanchez', serif;
+
+Images
+single man 23
+Team 25
+NO 30
+Bank Thing 20
+Happy Ribbon 26
+Lock Files 11
+Eye Files 16
+You Did It 07
+Town 10
+Art ohNo
