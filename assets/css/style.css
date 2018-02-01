@@ -155,7 +155,9 @@ textarea{
   grid-auto-rows: 275px;
   border: solid #cccccc 1px;
   border-radius: 6px;
-  margin: 10px;
+  margin: auto;
+  box-sizing: border-box;
+  width: 90%;
   
 }
 .box {
