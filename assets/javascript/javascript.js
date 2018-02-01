@@ -24,6 +24,7 @@
 			CVC: ""			
 		};
 	var review;
+	var cart;
 	var changes = {
 			homePage: "",				
 			state: 
@@ -215,7 +216,6 @@
 				  		<img class="boxImg" src="assets/images/ZenBusiness_MobileIcons_fullset-16.svg">
 				  	</div>			  	
 			   </div>`,
-			cart: "",
 			finsih: "",
 			didItDog: ""
 		};
@@ -591,11 +591,62 @@
 			}
 			//Script for review
 			if ($(".btn").hasClass("review")) {
-				//Show data
+				cart = `<div class="shoppingCart">
+			  		<div class="filingFee">
+				  		<div class="cartContent">
+				  			<h2 class="cartInfo">California</h2>
+				  			<p id="pContent">State filing fee</p>
+				  		</div>
+				  		<div class="cartSlider">		  			
+					  		<div id="slider">
+						  		<label class="switch" for="filingFee">
+								    <input type="checkbox" id="filingFee" checked/>
+								    <div class="slider round filing"></div>
+								</label>
+							</div>
+							 <p class="pSlider">$85</p>
+						 </div>
+
+			  		</div>
+			  		<div class="monthService">
+			  			<div class="cartContent">
+				  			<h2 class="cartInfo">Monthly Service</h2>
+				  			<p id="pContent">Privacy protection</p>
+				  		</div>
+				  		<div class="cartSlider">		  			
+					  		<div id="slider">
+						  		<label class="switch" for="monthService">
+								    <input type="checkbox" id="monthService" checked/>
+								    <div class="slider round filing"></div>
+								</label>
+							</div>
+							 <p class="pSlider">$5</p>
+						 </div>
+			  		</div>
+			  		<div class="oneTime">
+			  			<div class="cartContent">
+				  			<h2 class="cartInfo">One Time Payments</h2>
+				  			<p id="pContent">EIN service</p>
+				  		</div>
+				  		<div class="cartSlider">		  			
+					  		<div id="slider">
+						  		<label class="switch" for="oneTime">
+								    <input type="checkbox" id="oneTime" checked/>
+								    <div class="slider round filing"></div>
+								</label>
+							</div>
+							 <p class="pSlider">$50</p>
+						 </div>
+			  		</div>
+			  		<div class="total">
+			  			<p id="nextMonth">Next Month: $5</p>
+			  			<p id="total">Total: $300</p>
+			  		</div>
+			  	</div>`
 				
 				//next page
 				$(".artTalk").html("Shopping cart");
-				$(".section2").html(changes.cart);
+				$(".section2").html(cart);
 				$(".btn").removeClass("review").addClass("cart").text("Finish and pay");
 				return;
 			}
