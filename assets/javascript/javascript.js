@@ -216,7 +216,9 @@
 				  		<img class="boxImg" src="assets/images/ZenBusiness_MobileIcons_fullset-16.svg">
 				  	</div>			  	
 			   </div>`,
-			finsih: "",
+			finish: 
+					`<div class="shareBtn"><i class="material-icons"></i>Twitter Share</div>
+					<div class="shareBtn"><i class="material-icons"></i>Facebook Share</div>`,
 			didItDog: ""
 		};
 		console.log("this is working");
@@ -238,6 +240,7 @@
 				$(".section2").html(changes.firstLast);
 				$(".btn").text("That's me!");
 				$(".btn").removeClass("states").addClass("firstLast");
+				$(".art").attr("src","assets/images/Art2.png");
 				return;
 			}
 
@@ -256,6 +259,7 @@
 				$(".section2").html(changes.llcCorp);
 				$(".btn").hide();
 				$(".btn").removeClass("firstLast").addClass("llcCorp");
+				$(".art").attr("src","assets/images/Art3.png");
 
 				$(document).ready(function(){
 
@@ -302,6 +306,7 @@
 				$(".artTalk").html("Stellar name!"+ "<br>" +"What does"+ "<br>" +"your business do?");
 				$(".section2").html(changes.bizDo);
 				$(".btn").removeClass("bizName").addClass("bizDo").text("We're half way there!");
+				$(".art").attr("src","assets/images/Art4.png");
 				return;
 			}
 
@@ -314,6 +319,7 @@
 				$(".artTalk").html("What's your"+ "<br>" +"mailing address?");
 				$(".section2").html(changes.address);
 				$(".btn").removeClass("bizDo").addClass("address").text("Next");
+				$(".art").attr("src","assets/images/Art5.png");
 				return;
 			}
 			//Script for address
@@ -327,6 +333,7 @@
 				$(".artTalk").html("Ah "+ clientInfo.state + "!" + "<br>" +"Is " + clientInfo.address + " also your business address?");
 				$(".section2").html(changes.bizAddress);
 				$(".btn").removeClass("address").addClass("bizAddress");
+				$(".art").attr("src","assets/images/Art6.png");
 				return;
 			}
 
@@ -339,11 +346,13 @@
 					$(".artTalk").html();
 					$(".section2").html(changes.contact);
 					$(".btn").removeClass("bizAddress").addClass("contact");
+					$(".art").attr("src","assets/images/Art7.png");
 				}else{
 					console.log("no");
 					$(".artTalk").html("What's your"+ "<br>" +"business address?");
 					$(".section2").html(changes.address);
 					$(".btn").removeClass("bizAddress").addClass("newBizAddress");
+					$(".art").attr("src","assets/images/Art6.png");
 				}
 				return;
 								
@@ -359,6 +368,7 @@
 				$(".artTalk").html("You're doing great! How"+ "<br>" +"should we get in touch" + "<br>" + "with you?");
 				$(".section2").html(changes.contact);
 				$(".btn").removeClass("newBizAddress").addClass("contact");
+				$(".art").attr("src","assets/images/Art8.png");
 				return;
 			}
 
@@ -373,6 +383,7 @@
 				$(".artTalk").html("Are you the only owner"+ "<br>" +"of the business?");
 				$(".section2").html(changes.owner);
 				$(".btn").removeClass("contact").addClass("owner");
+				$(".art").attr("src","assets/images/Art9.png");
 
 				$(document).ready(function(){
 
@@ -402,6 +413,7 @@
 				$(".artTalk").html("Are you the person"+ "<br>" +"managing the business?");
 				$(".section2").html(changes.manager);
 				$(".btn").removeClass("owner").addClass("manager");
+				$(".art").attr("src","assets/images/Art7.png");
 
 				$(document).ready(function(){
 
@@ -432,6 +444,7 @@
 				$(".smallTalk").html("Now I'm going to ask you a few"+"<br>"+"questions to personalize your"+"<br>"+"business formation with our"+"<br>"+"custom products.");
 				$(".section2").html(changes.great);
 				$(".btn").removeClass("manager").addClass("great");
+				$(".art").attr("src","assets/images/Art6.png");
 
 				return;
 			}
@@ -443,6 +456,7 @@
 				$(".smallTalk").html("");
 				$(".section2").html(changes.EIN);
 				$(".btn").removeClass("great").addClass("EIN");
+				$(".art").attr("src","assets/images/Art5.png");
 
 				$(document).ready(function(){
 
@@ -472,6 +486,7 @@
 				$(".artTalk").html("Do you want to keep your"+ "<br>" +"information private for" +"<br>" + "<span id='blue'>$10</span> a month?");
 				$(".section2").html(changes.private);
 				$(".btn").removeClass("EIN").addClass("private");
+				$(".art").attr("src","assets/images/Art4.png");
 
 				$(document).ready(function(){
 
@@ -503,6 +518,7 @@
 				$(".artTalk").html("Would you like our worry"+ "<br>" +"free guarantee for only" +"<br>" + "<span id='blue'>$10</span> a month?");
 				$(".section2").html(changes.worryFree);
 				$(".btn").removeClass("private").addClass("worryFree").text("Almost done");
+				$(".art").attr("src","assets/images/Art3.png");
 
 				$(document).ready(function(){
 
@@ -586,68 +602,103 @@
 				$(".artTalk").html("Information review");
 				$(".section2").html(review);
 				$(".btn").removeClass("worryFree").addClass("review").text("Next");
+				$(".art").attr("src","assets/images/Art2.png");
 				console.log(clientInfo);
 				return;
 			}
 			//Script for review
 			if ($(".btn").hasClass("review")) {
-				cart = `<div class="shoppingCart">
-			  		<div class="filingFee">
-				  		<div class="cartContent">
-				  			<h2 class="cartInfo">California</h2>
-				  			<p id="pContent">State filing fee</p>
-				  		</div>
-				  		<div class="cartSlider">		  			
-					  		<div id="slider">
-						  		<label class="switch" for="filingFee">
-								    <input type="checkbox" id="filingFee" checked/>
-								    <div class="slider round filing"></div>
-								</label>
-							</div>
-							 <p class="pSlider">$85</p>
-						 </div>
+				cart = 
+					`<div class="shoppingCart">
+				  		<div class="filingFee">
+					  		<div class="cartContent">
+					  			<h2 class="cartInfo">${clientInfo.state}</h2>
+					  			<p id="pContent">State filing fee</p>
+					  		</div>
+					  		<div class="cartSlider">		  			
+						  		<div id="slider">
+							  		<label class="switch" for="filingFee">
+									    <input type="checkbox" id="filingFee" checked/>
+									    <div class="slider round filing"></div>
+									</label>
+								</div>
+								 <p class="pSlider">$85</p>
+							 </div>
 
-			  		</div>
-			  		<div class="monthService">
-			  			<div class="cartContent">
-				  			<h2 class="cartInfo">Monthly Service</h2>
-				  			<p id="pContent">Privacy protection</p>
 				  		</div>
-				  		<div class="cartSlider">		  			
-					  		<div id="slider">
-						  		<label class="switch" for="monthService">
-								    <input type="checkbox" id="monthService" checked/>
-								    <div class="slider round filing"></div>
-								</label>
-							</div>
-							 <p class="pSlider">$5</p>
-						 </div>
-			  		</div>
-			  		<div class="oneTime">
-			  			<div class="cartContent">
-				  			<h2 class="cartInfo">One Time Payments</h2>
-				  			<p id="pContent">EIN service</p>
+				  		<div class="monthService">
+				  			<div class="cartContent">
+					  			<h2 class="cartInfo">Monthly Service</h2>
+					  			<p id="pContent">Privacy protection</p>
+					  		</div>
+					  		<div class="cartSlider">		  			
+						  		<div id="slider">
+							  		<label class="switch" for="monthService">
+									    <input type="checkbox" id="monthService" checked/>
+									    <div class="slider round filing"></div>
+									</label>
+								</div>
+								 <p class="pSlider">$5</p>
+							 </div>
 				  		</div>
-				  		<div class="cartSlider">		  			
-					  		<div id="slider">
-						  		<label class="switch" for="oneTime">
-								    <input type="checkbox" id="oneTime" checked/>
-								    <div class="slider round filing"></div>
-								</label>
-							</div>
-							 <p class="pSlider">$50</p>
-						 </div>
-			  		</div>
-			  		<div class="total">
-			  			<p id="nextMonth">Next Month: $5</p>
-			  			<p id="total">Total: $300</p>
-			  		</div>
-			  	</div>`
+				  		<div class="oneTime">
+				  			<div class="cartContent">
+					  			<h2 class="cartInfo">One Time Payments</h2>
+					  			<p id="pContent">EIN service</p>
+					  		</div>
+					  		<div class="cartSlider">		  			
+						  		<div id="slider">
+							  		<label class="switch" for="oneTime">
+									    <input type="checkbox" id="oneTime" checked/>
+									    <div class="slider round filing"></div>
+									</label>
+								</div>
+								 <p class="pSlider">$50</p>
+							 </div>
+				  		</div>
+				  		<div class="total">
+				  			<p id="nextMonth">Next Month: $5</p>
+				  			<p id="total">Total: $300</p>
+				  		</div>
+				  	</div>
+
+				  	<h1 style="font-family: Sanchez; text-align: center; font-weight: lighter;">Payment</h1>
+				  	<div class="payment">
+				  		<p class="descriptionText">Name on card</p>
+						  	<form>
+						  		<input type="text" name="cardName" value="John James Doe" onfocus="if (this.value=='John James Does') this.value='';">
+						  	</form>
+						 <p class="descriptionText">Card number</p>
+						  	<form class="zenForm">
+						  		<input type="text" name="CCNum" value="0000 0000 0000 0000" onfocus="if (this.value=='0000 0000 0000 0000') this.value='';">
+						  	</form>
+						 
+						 <div class="addressWrapper payment">
+					  		<div class="addForm">
+					  		<p class="descriptionText payment">Expiration</p>
+					  			<form>
+					  				<input id="addressInput" type="text" name="exp" value="00/0000" onfocus="if (this.value=='00/0000') this.value='';">
+					  			</form>
+					  		</div>
+
+					  		<div class="numForm">
+					  		<p class="descriptionText payment">CCV</p>
+					  			<form>
+					  				<input id="addressInput" type="text" name="CVC" value="000" onfocus="if (this.value=='000') this.value='';">
+					  			</form>
+					  		</div>
+					  	</div>
+						<p class="descriptionText">Street address</p>
+						  	<form>
+						  		<input type="text" name="cardName" value="${clientInfo.address}">
+						  	</form>
+				  	</div>`;
 				
 				//next page
 				$(".artTalk").html("Shopping cart");
 				$(".section2").html(cart);
 				$(".btn").removeClass("review").addClass("cart").text("Finish and pay");
+				$(".art").attr("src","assets/images/Art1.png");
 				return;
 			}
 
@@ -663,9 +714,9 @@
 				//next page
 				$(".artTalk").html("Wasn't that easy?");
 				$(".smallTalk").html("Let your friends know you just"+"<br>" +"started your business with"+"<br>" +"ZenBusiness.");
-				$(".section2").html(changes.finish);
-				$("body").css("background-image", "url(../images/ZenBusiness_DesktopIcons_fullset_SVG-28.svg)");
+				$(".section2").html(changes.finish);				
 				$(".btn").removeClass("cart").addClass("finish").text("Skip");
+				$(".art").attr("src","assets/images/Art3.png");
 				return;
 			}
 
@@ -676,8 +727,10 @@
 				//next page
 				$(".artTalk").html("You did it!");
 				$(".smallTalk").html("Thank you for using ZenBusiness to"+"<br>" +"help form your company. You should"+"<br>" +"receive a welcome email shortly.");
-				$(".section2").html(changes.firstLast);
+				$(".section2").html(changes.didItDog);
 				$(".btn").removeClass("finish").addClass("didItDog").text("Done");
+				$(".art").addClass("didItDog");
+				$(".art").attr("src","assets/images/ZenBusiness_MobileIcons_fullset-07.svg");
 				return;
 			}
 

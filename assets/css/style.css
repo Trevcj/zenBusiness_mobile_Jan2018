@@ -61,6 +61,11 @@ p{
   border: solid #363636 6px;
   border-radius: 500px;
 }
+.art.didItDog{
+	border: none;
+	height: 90px;
+	width: auto;
+}
 .artTalk{
   font-family: Sanchez;
   font-size: 24px;
@@ -105,9 +110,15 @@ input {
   height: 50px;
   text-align: left;
   font-size: inherit;
-  border-radius: 5px;  
-  padding-left: 5px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  
 }
+
+input[type="text" i]{
+	padding: 3px;
+}
+
 textarea{
     font-family: Lato;
     display: block;
@@ -119,8 +130,9 @@ textarea{
     text-align: left;
     padding-left: 5px;
     font-size: 12px;
-    border-radius: 5px;  
-    padding-left: 5px;
+    border-radius: 5px;
+    padding-top: 5px; 
+    
 }
 #dropForm {
   font-family: Lato;
@@ -132,14 +144,17 @@ textarea{
   height: 50px;
   text-align: center;
   font-size: inherit;
-  border-radius: 5px;  
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 3px;
+  
 }
 .boxWrapper{
   display: grid;
   grid-template-columns: 50% 50%;  
   grid-auto-rows: 275px;
   border: solid #cccccc 1px;
-  border-radius: 5px;
+  border-radius: 6px;
   margin: 10px;
   
 }
@@ -154,17 +169,21 @@ textarea{
 .box.active{
   background-color: #3fb9be;
   color: white;
-  box-shadow: 4px 7px #cccccc;
-  border-radius: 5px; 
+  
+  
  }
 .box.Left{
   grid-column: 1 / 2;
   display: block;
   border-right: solid #cccccc 1px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
 }
 .box.Right {
   grid-column: 2 / 3;
-  display: block;  
+  display: block;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px; 
 }
 
 .boxBgText{
@@ -189,22 +208,29 @@ textarea{
   grid-template-columns: 70%  30%;
   grid-column-gap: 0;
   margin: 0 auto;
-
+  left: 0;
+}
+.addressWrapper.payment{
+	grid-template-columns: 35%  20% 45%;
 }
 .addForm {
   grid-column: 1 / 2;
   margin-right: 20px;
 }
+.addForm.payment {
+
+}
 
 .numForm {
   grid-column: 2 / 3;
 }
+
 .review{
   width: 100%;
+  left: 0;
 }
 .review#dropForm{
   width: 100%;
-  height: 54px;
 }
 
 input#addressInput {
@@ -310,6 +336,29 @@ input#addressInput {
 
 .btn:hover {
   background: #4dd7dd;
+  text-decoration: none;
+}
+.shareBtn {
+  -webkit-border-radius: 31;
+  -moz-border-radius: 31;
+  border-radius: 31px;
+  font-family: Lato;
+  color: #3fb9be;
+  font-size: 13px;
+  background: white;
+  border: solid #3fb9be 2px;
+  padding: 17px 20px 17px 20px;
+  text-decoration: none;
+  width: 80%;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+.shareBtn:hover {
+  background: white;
   text-decoration: none;
 }
 #ynSlider{
