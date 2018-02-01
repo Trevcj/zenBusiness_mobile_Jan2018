@@ -93,7 +93,7 @@ p{
   color: #363636;
   text-align: left;
   margin-bottom: 2px;
-  margin-left: 10%;
+  margin-left: 6%;
   font-weight: bold;
 }
 .descriptionText.review {
@@ -326,12 +326,13 @@ input#addressInput {
   background: #3fb9be;
   padding: 12px 20px 12px 20px;
   text-decoration: none;
-  width: 80%;
+  width: 90%;
   text-align: center;
   display: block;
   margin: 0 auto;
   margin-bottom: 20px;
   margin-top: 40px;
+  box-sizing: border-box;
 }
 
 .btn:hover {
@@ -349,12 +350,13 @@ input#addressInput {
   border: solid #3fb9be 2px;
   padding: 17px 20px 17px 20px;
   text-decoration: none;
-  width: 80%;
+  width: 90%;
   text-align: center;
   display: block;
   margin: 0 auto;
   margin-bottom: 20px;
   margin-top: 30px;
+  box-sizing: border-box;
 }
 
 .shareBtn:hover {
