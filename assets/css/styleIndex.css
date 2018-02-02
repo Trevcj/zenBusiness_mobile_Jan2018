@@ -1,0 +1,106 @@
+#menu {
+	font-size: 35px;
+	margin-top: 8px;
+	margin-left: 3px;
+
+}
+.homeWrapper {
+	display: grid;
+	width: 100%;
+	margin-top: 85px;
+}
+
+.forget{
+	grid-row: 1/2;
+	width: 100%;
+}
+
+.topText {
+	font-family: Sanchez;
+  	font-size: 27px;
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+	font-weight: bold;
+}
+.hassel{
+	margin-top: 85px;
+	grid-row: 2/3;
+	
+}
+.thinText {
+	font-family: Lato;
+  	font-size: 27px;
+	text-align: center;
+	width: 80%;
+	margin: 0 auto;
+	font-weight: lighter;
+	color: #363636;
+}
+.thinText.Sm{
+	font-size: 24px;
+}
+.townImg {
+	width: 90%;
+	margin: auto;
+	overflow: hidden;
+}
+.btnStart {
+  -webkit-border-radius: 31;
+  -moz-border-radius: 31;
+  border-radius: 31px;
+  font-family: Sanchez;
+  color: #ffffff;
+  font-size: 23px;
+  background: #3fb9be;
+  padding: 12px 20px 12px 20px;
+  text-decoration: none;
+  width: 90%;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  box-sizing: border-box;
+}
+
+.btnStart:hover {
+  background: #4dd7dd;
+  text-decoration: none;
+}
+
+#freeIcons {
+	display: block;
+	margin: 25px auto auto auto;		
+}
+#freeHeader{
+	font-family: Lato;
+	font-weight: lighter;
+	font-size: 20px;
+	text-align: center;
+}
+#freeTextBlock{
+	font-family: Lato;
+	font-size: 13px;
+	text-align: center;
+	line-height: 10px;
+}
+.forFree {
+	grid-row: 3/4;
+	width: 100%;
+}
+.keepPrivacy {
+	grid-row: 4/5;
+	margin: 35px auto;
+	width: 100%;
+}
+.eyeOut {
+	grid-row: 5/6;
+	margin: auto;
+	width: 100%;
+}
+#whiteSpace {
+	grid-row: 6/7;
+	height: 200px;
+	width: 100%;
+}
