@@ -1,13 +1,31 @@
 a {
 	text-decoration: none;
+	color: #363636;
 }
 
 #menu {
 	font-size: 35px;
 	margin-top: 8px;
 	margin-left: 3px;
-
 }
+.slideOut {
+	position: fixed;
+	width: 0;
+	background-color: black;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: 1000;
+	border-right: solid #3fb9be 4px;
+}
+
+.slideOut.active {
+	width: 75%;
+}
+.white {
+	color: white;
+}
+
 .homeWrapper {
 	display: grid;
 	width: 100%;

@@ -7,6 +7,9 @@ html, body {
 p{
 	font-family: Lato;
 }
+a {
+  color: #363636;
+}
 .nav {
   display: grid;
   grid-template-columns: 5% 95%;  
@@ -19,7 +22,7 @@ p{
   border-bottom: solid #cccccc 1px;
   position: fixed;
   background-color: white;
-  z-index: 1000;
+  z-index: 999;
 }
 .zenHeader {
   grid-column: 2/3;
