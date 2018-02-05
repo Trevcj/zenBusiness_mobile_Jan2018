@@ -257,7 +257,7 @@
 				// $("body").css("background-image", "url(assets/images/ZenBusiness_DesktopIcons_fullset_SVG-28.svg)");
 				
 				$(".section2").html(changes.llcCorp);
-				$(".btn").hide();
+				$(".btn").text("Select Type Above");
 				$(".btn").removeClass("firstLast").addClass("llcCorp");
 				$(".art").attr("src","assets/images/Art3.png");
 
@@ -269,7 +269,7 @@
 						$(".Left").removeClass("active");
 						clientInfo.llcCorp = "Corporation";
 						console.log(clientInfo.llcCorp);
-						$(".btn").text("Form a Corporation").show();
+						$(".btn").text("Form a Corporation");
 					});
 					$(".Left").on("click", function() {
 						$(this).addClass("active");
@@ -277,7 +277,7 @@
 						$(".Right").removeClass("active");
 						clientInfo.llcCorp = "LLC";
 						console.log(clientInfo.llcCorp);
-						$(".btn").text("Form an LLC").show();
+						$(".btn").text("Form an LLC");
 					});
 					
 				});
