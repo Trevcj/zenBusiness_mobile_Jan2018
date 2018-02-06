@@ -3,6 +3,10 @@ html, body {
   padding: 0;
   margin: 0;
 }
+input, text-area, select{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
 p{
 	font-family: Lato;
 }
@@ -341,7 +345,7 @@ input#addressInput {
   width: 90%;
   text-align: center;
   display: block;
-  margin: 15% auto auto auto;
+  margin: 10% auto 5% auto;
   box-sizing: border-box;
 }
 

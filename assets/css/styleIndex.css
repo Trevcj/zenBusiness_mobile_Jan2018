@@ -39,11 +39,10 @@ a {
 
 .topText {
 	font-family: Sanchez;
-  	font-size: 27px;
+  	font-size: 1.4em;
 	text-align: center;
 	width: 80%;
 	margin: 0 auto;
-	font-weight: bold;
 }
 .hassel{
 	margin-top: 20%;
