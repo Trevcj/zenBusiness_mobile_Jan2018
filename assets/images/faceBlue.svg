@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>social/faceBlue</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Footer/mobile" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-335.000000, -119.000000)">
+        <g id="Social" transform="translate(147.000000, 119.000000)">
+            <g id="social/faceBlue" transform="translate(188.000000, 0.000000)">
+                <g id="faceBlue">
+                    <circle id="Oval" fill="#3FB9BE" fill-rule="nonzero" cx="32" cy="32" r="32"></circle>
+                    <path d="M34.44,51.14 L34.44,34.7 L40,34.7 L40.83,28.3 L34.44,28.3 L34.44,24.21 C34.44,22.35 34.95,21.09 37.61,21.09 L41,21.09 L41,15.36 C39.3591479,15.1863427 37.7100005,15.1028838 36.06,15.11 C31.17,15.11 27.82,18.11 27.82,23.57 L27.82,28.3 L22.29,28.3 L22.29,34.7 L27.82,34.7 L27.82,51.14 L34.44,51.14 Z" id="f" fill="#FFFFFF" fill-rule="nonzero"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

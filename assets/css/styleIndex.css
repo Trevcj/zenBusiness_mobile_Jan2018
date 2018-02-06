@@ -202,29 +202,27 @@ a {
 	left: 0;
 	bottom: 0;
 	display: grid;
+	margin-bottom: -10px;
 }
 #copyRight {
 	font-family: Lato;
-	font-size: 13px;
+	font-size: 0.4em;
 	text-align: center;
 	color: white;
 	display: block;
-	margin: 0 auto;
+	margin: 0 auto .03em auto;
 }
 .socialIcons {
 	color: white;
 	font-size: 1.7em;
 	display: grid;
 	text-align: center;
-	width: 100%;
-}
-.icons {
-	background-color: #3fb9be;
-	height: 1.8em;
-	width: 1.8em;
-	border-radius: 5px;
-	
+	width: 70%;
 	margin: auto;
+}
+#zenIcons {
+	height: 1.3em;
+
 }
 .icons#one{
 	grid-column: 1/2;
@@ -237,8 +235,4 @@ a {
 }
 .icons#four{
 	grid-column: 4/5;
-}
-.fab {
-	display: block;
-	margin: 30em auto;
 }
