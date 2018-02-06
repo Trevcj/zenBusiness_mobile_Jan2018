@@ -164,7 +164,7 @@ textarea{
 .boxWrapper{
   display: grid;
   grid-template-columns: 50% 50%;  
-  grid-auto-rows: 235px;
+  grid-auto-rows: 14em;
   border: solid #cccccc 1px;
   border-radius: 6px;
   margin: auto;
@@ -213,7 +213,7 @@ textarea{
   line-height: 240%;
 }
 .boxImg{
-  height: 50%;
+  height: 40%;
   width: auto;
   margin: auto;
   margin-top: 10%;
