@@ -288,7 +288,7 @@
 			//Script for llcCorp
 			if ($(".btn").hasClass("llcCorp")) {
 				//next page
-				$(".artTalk").html("What do you"+ "<br>" +"want to name"+ "<br>" +"your business?");
+				$(".artTalk").html("What do you want to"+ "<br>" +"name your business?");
 				$(".section2").html(changes.bizName);
 				$(".btn").removeClass("llcCorp").addClass("bizName");
 				$(".btn").text("Next");
@@ -452,7 +452,7 @@
 			//Script for great
 			if ($(".btn").hasClass("great")) {
 				//next page
-				$(".artTalk").html("Do you want to add an EIN"+ "<br>" +"to your order for" + "<span id='blue'> $50?</span>");
+				$(".artTalk").html("Do you want to add an EIN"+ "<br>" +"to your order for" + "<span id='blue'> $50</span>?");
 				$(".smallTalk").html("");
 				$(".section2").html(changes.EIN);
 				$(".btn").removeClass("great").addClass("EIN");
