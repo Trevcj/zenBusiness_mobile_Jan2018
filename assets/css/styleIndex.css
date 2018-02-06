@@ -119,8 +119,9 @@ a {
 }
 .forFree {
 	grid-row: 3/4;
-	width: 100%;
-	margin-top: 20%;
+	width: 90%;
+	margin: 20% auto auto auto;
+
 }
 .keepPrivacy {
 	grid-row: 4/5;
