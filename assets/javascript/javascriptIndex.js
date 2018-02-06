@@ -3,12 +3,12 @@ $(document).ready(function () {
 		console.log("working!");
 		if ($(".slideOut").hasClass("active")) {
 			$(".slideOut").removeClass("active");
-			$(".slideOut").hide(400);
+			$("#links").fadeOut(300);
+			
 		} else{
 			$(".slideOut").addClass("active");
-			$(".slideOut").show(400);
+			$("#links").delay(600).fadeIn(800);
 		}
 	});
-
 
 });

@@ -16,7 +16,18 @@ a {
 	left: 0;
 	top: 0;
 	z-index: 1000;
-	border-right: solid #3fb9be 4px;
+	-webkit-transition: width 1.5s;
+  	-moz-transition: width 1.5s;
+  	-o-transition: width 1.5s;
+  	transition: width 1.5s;
+}
+#slideNames{
+	font-family: Lato;
+	font-size: 1.2em;
+	color: white;
+	margin: 10%;
+	line-height: 2em;
+
 }
 
 .slideOut.active {
