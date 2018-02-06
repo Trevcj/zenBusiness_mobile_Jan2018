@@ -228,6 +228,15 @@ textarea{
 }
 .addressWrapper.payment{
 	grid-template-columns: 35%  20% 45%;
+  margin-top: 3%;
+}
+#payHeader{
+   font-family: Sanchez;
+  font-size: 1.3em;
+  text-align: center;
+  width: 70%;
+  margin: 5% auto;
+
 }
 .addForm {
   grid-column: 1 / 2;
@@ -255,12 +264,11 @@ input#addressInput {
 
 .shoppingCart {
 	width: 90%;
-	margin: auto;
+	margin: 10% auto auto auto;
 	display: grid;
 	grid-template-columns: 100%;
 	border: solid #cccccc 1px;
 	border-radius: 5px;
-	
 }
 
 .filingFee{
@@ -268,12 +276,11 @@ input#addressInput {
 	display: grid;
 	grid-template-columns: 60% 40%;
 	padding: 10px;
-
+  margin-top: 5%;
 }
 .cartContent{
 	grid-column: 1/2;
 	grid-row: 1/3;
-
 }
 #pContent{
 	grid-row: 2/3;
@@ -292,19 +299,20 @@ input#addressInput {
 	float: left;
 	left: auto;
 	margin-top: 8.5px;
-
 }
 .monthService{
 	grid-row: 2/3;
 	display: grid;
 	grid-template-columns: 60% 40%;
 	padding: 10px;
+  margin-top: 5%;
 }
 .oneTime{
 	grid-row: 3/4;
 	display: grid;
 	grid-template-columns: 60% 40%;
 	padding: 10px;
+  margin-top: 5%;
 }
 .total{
 	grid-row: 4/5;
@@ -315,6 +323,7 @@ input#addressInput {
 	border-bottom-right-radius: 5px;
 	border-bottom-left-radius: 5px;
 	padding: 10px;
+  margin-top: 5%;
 }
 #nextMonth{
 	font-size: 0.9em;

@@ -39,7 +39,7 @@ a {
 
 .topText {
 	font-family: Sanchez;
-  	font-size: 1.4em;
+  	font-size: 1.55em;
 	text-align: center;
 	width: 80%;
 	margin: 0 auto;
@@ -51,7 +51,7 @@ a {
 }
 .thinText {
 	font-family: Lato;
-  	font-size: 27px;
+  	font-size: 1.4em;
 	text-align: center;
 	width: 80%;
 	margin: 0 auto;
@@ -131,9 +131,12 @@ a {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+#gapDiv{
+	margin: 3% auto 3% auto;
+}
 #centerIt {
 	display: block;
-	margin: 40% auto;
+	margin: 30% auto;
 }
 .eyeOut {
 	grid-row: 5/6;

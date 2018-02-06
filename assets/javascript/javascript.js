@@ -662,7 +662,7 @@
 				  		</div>
 				  	</div>
 
-				  	<h1 style="font-family: Sanchez; text-align: center; font-weight: lighter;">Payment</h1>
+				  	<h1 id="payHeader">Payment</h1>
 				  	<div class="payment">
 				  		<p class="descriptionText">Name on card</p>
 						  	<form>
@@ -699,6 +699,7 @@
 				$(".section2").html(cart);
 				$(".btn").removeClass("review").addClass("cart").text("Finish and pay");
 				$(".art").attr("src","assets/images/Art1.png");
+				window.scrollTo(0, 0);
 				return;
 			}
 
