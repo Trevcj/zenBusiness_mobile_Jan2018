@@ -216,6 +216,7 @@ a {
 	font-size: 1.7em;
 	display: grid;
 	text-align: center;
+	width: 100%;
 }
 .icons {
 	background-color: #3fb9be;
