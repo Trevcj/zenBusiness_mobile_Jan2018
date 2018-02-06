@@ -730,8 +730,8 @@
 				$(".smallTalk").html("Thank you for using ZenBusiness to"+"<br>" +"help form your company. You should"+"<br>" +"receive a welcome email shortly.");
 				$(".section2").html(changes.didItDog);
 				$(".btn").removeClass("finish").addClass("didItDog").text("Done");
-				$(".art").addClass("didItDog");
-				$(".art").attr("src","assets/images/ZenBusiness_MobileIcons_fullset-07.svg");
+				$(".art").hide().addClass("didItDog");
+				$(".art").attr("src","assets/images/ZenBusiness_MobileIcons_fullset-07.svg").show();
 				return;
 			}
 
