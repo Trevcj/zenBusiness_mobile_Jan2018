@@ -133,13 +133,12 @@
 			  		</div>
 			  	</div>`,
 			bizAddress: 
-				`<div id="ynSlider">
-			  		<p id="sliderNo">No</p>
+				`<div id="ynSlider">			  		
 				  	 <label class="switch" for="checkbox">
 					    <input type="checkbox" id="checkbox" checked/>
 					    <div class="slider round"></div>
 					 </label>
-					 <p id="sliderYes">Yes</p>
+					 <p id="sliderResponse">Yes</p>
 			  	</div>`,
 			contact: 
 				`<p class="descriptionText">Email address</p>
@@ -217,8 +216,8 @@
 				  	</div>			  	
 			   </div>`,
 			finish: 
-					`<div class="shareBtn"><i class="material-icons"></i>Twitter Share</div>
-					<div class="shareBtn"><i class="material-icons"></i>Facebook Share</div>`,
+					`<div class="shareBtn"><i class="fab fa-twitter"></i>  Twitter Share</div>
+					<div class="shareBtn"><i class="fab fa-facebook-square"></i></i>  Facebook Share</div>`,
 			didItDog: ""
 		};
 		console.log("this is working");
@@ -334,21 +333,32 @@
 				$(".section2").html(changes.bizAddress);
 				$(".btn").removeClass("address").addClass("bizAddress");
 				$(".art").attr("src","assets/images/Art6.png");
+
+				$(".slider.round").on("click", function() {
+					console.log("working kind of");
+					if ($("#checkbox").prop("checked")){
+						$("#sliderResponse").text("No");
+					} else {
+						$("#sliderResponse").text("Yes");
+					}
+				});
 				return;
 			}
 
 			//Script for bizAddress
+			
+
 			if ($(".btn").hasClass("bizAddress")) {
 				//If address is the same set it = if not ask for business address
 				if ($("#checkbox").prop("checked")) {
-					console.log("yes");
+					console.log("yes");					
 					clientInfo.bizAddress = clientInfo.address;
 					$(".artTalk").html();
 					$(".section2").html(changes.contact);
 					$(".btn").removeClass("bizAddress").addClass("contact");
 					$(".art").attr("src","assets/images/Art7.png");
 				}else{
-					console.log("no");
+					console.log("no");					
 					$(".artTalk").html("What's your"+ "<br>" +"business address?");
 					$(".section2").html(changes.address);
 					$(".btn").removeClass("bizAddress").addClass("newBizAddress");
