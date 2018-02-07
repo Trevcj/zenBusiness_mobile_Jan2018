@@ -8,12 +8,15 @@ a {
 	margin-top: 8px;
 	margin-left: 3px;
 }
+#menu.white {
+	color: white;
+}
 .slideOut {
 	display: grid;
 	grid-template-rows: 10% 80% 10%;
 	position: fixed;
 	width: 0;
-	background-color: black;
+	background-color: #363636;
 	height: 100%;
 	left: 0;
 	top: 0;
@@ -158,7 +161,7 @@ a {
 	font-family: Lato;
 	font-size: 13px;
 	text-align: center;
-	width: 75%;
+	width: 70%;
 	margin: 3% auto;
 	line-height: 150%;
 }
@@ -170,8 +173,9 @@ a {
 }
 .keepPrivacy {
 	grid-row: 4/5;
-	width: 100%;
-	height: auto;
+	width: auto;
+	max-width: 400px;
+	height: 390px;
 	margin: 2em auto;
 	background-image: url(../images/ZenBusiness_MobileIcons_fullset-02.svg);
 	background-repeat: no-repeat;
@@ -181,7 +185,7 @@ a {
 
 #centerIt {
 	display: block;
-	margin: 30% auto;
+	margin: 5.5em auto;
 }
 .eyeOut {
 	grid-row: 5/6;
