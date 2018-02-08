@@ -80,9 +80,9 @@ a {
 }
 .artTalk{
   font-family: Sanchez;
-  font-size: 1.2em;
+  font-size: 1.3em;
   text-align: center;
-  width: 70%;
+  width: 75%;
   margin: 0 auto;
   line-height: 140%;
 }
@@ -109,10 +109,14 @@ a {
   margin-bottom: 2px;
   margin-left: 6%;
   font-weight: bold;
-  margin-top: 3%;
+  margin-top: 1em;
+}
+.descriptionText.do{
+  margin-left: 4%;
 }
 .descriptionText.review {
 margin-left: 2px;
+margin-top: 1em;
 }
 
 input {
@@ -298,6 +302,7 @@ input#addressInput {
 	float: right;
 	margin: 8.5px auto;
 	margin-right: 25px;
+  font-weight: bold;
 }
 #slider {
 	float: left;
@@ -364,7 +369,7 @@ input#addressInput {
 }
 
 .btn:hover {
-  background: #4dd7dd;
+  
   text-decoration: none;
 }
 .shareBtn {
@@ -376,14 +381,13 @@ input#addressInput {
   font-size: 13px;
   background: white;
   border: solid #3fb9be 2px;
-  padding: 17px 20px 17px 20px;
+  padding: 0.9em;
   text-decoration: none;
   width: 90%;
   text-align: center;
-  display: block;
+  display: grid;
   margin: 0 auto;
-  margin-bottom: 20px;
-  margin-top: 30px;
+  margin-top: 2em;
   box-sizing: border-box;
 }
 
@@ -460,4 +464,14 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+#share {
+  margin: auto;
+  grid-column: 2/3;
+  margin: auto auto auto 1em;
+}
+#largerIcon {
+  font-size: 1.9em;
+  grid-column: 1/2;
+  margin: auto 0 auto auto;
 }

@@ -87,7 +87,7 @@ a {
 	text-align: center;
 	width: 80%;
 	margin: 1em auto .5em auto;
-	font-weight: lighter;
+	font-weight: 100;
 	color: #363636;
 	line-height: 110%;
 }
@@ -127,7 +127,7 @@ a {
 }
 
 .btnStart:hover {
-  background: #4dd7dd;
+  
   text-decoration: none;
 }
 

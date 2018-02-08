@@ -115,7 +115,7 @@
 						<option value="Corporation">Corporation</option>
 					</select>`,
 			bizDo: 
-				`<p class="descriptionText">Your business info</p>
+				`<p class="descriptionText do">Your business info</p>
 			  		<form>
 			  			<textarea class="bizDo" onfocus="if (this.value=='For example: We make the best beef jerky on Earth!') this.value='';">For example: We make the best beef jerky on Earth!</textarea>
 			  		</form>`,
@@ -216,8 +216,8 @@
 				  	</div>			  	
 			   </div>`,
 			finish: 
-					`<div class="shareBtn"><i class="fab fa-twitter"></i>  Twitter Share</div>
-					<div class="shareBtn"><i class="fab fa-facebook-square"></i></i>  Facebook Share</div>`,
+					`<div class="shareBtn"><span id="largerIcon"><i class="fab fa-twitter"></i></span>  <h4 id="share">twitter share</h4></div>
+					<div class="shareBtn"><span id="largerIcon"><i class="fab fa-facebook-square"></i></span> <h4 id="share">facebook share</h4></div>`,
 			didItDog: ""
 		};
 		console.log("this is working");
